@@ -1,5 +1,3 @@
-import './attendance.css';
-
 export default function HomePage() {
   const today = new Date().toISOString().split('T')[0];
   return (
@@ -141,7 +139,7 @@ export default function HomePage() {
             </div>
             <h3>No Students Found</h3>
             <p>There are no students matching your query. Add your first student to get started!</p>
-            <button className="btn btn-primary" onClick={() => (window as any).openAddStudentModal()}>
+            <button className="btn btn-primary" id="emptyStateAddBtn">
               <i className="fa-solid fa-user-plus"></i> Add Student
             </button>
           </div>
